@@ -16,7 +16,7 @@ PDF formatado para estudo
 
 Tudo isso de forma reprodutível, offline-friendly (após extração) e sem dependência de APIs externas no processamento final.
 
-🎯 Objetivo do Projeto
+ Objetivo do Projeto
 
 Transformar materiais didáticos brutos (slides e documentos) em conteúdo estruturado de estudo, adequado para:
 
@@ -30,15 +30,15 @@ reaproveitamento em plataformas educacionais (como o IAVocacional).
 
 O foco não é resumo superficial, e sim organização conceitual didática, respeitando a ordem e o conteúdo real apresentado pelo professor.
 
-🧠 Visão Geral do Pipeline
+ Visão Geral do Pipeline
 
 O notebook executa as seguintes etapas:
 
-1️⃣ Montagem do Google Drive
+ Montagem do Google Drive
 
 Permite acesso direto aos materiais originais e gravação automática dos resultados.
 
-2️⃣ Extração de Texto (PPTX, PDF, DOCX)
+ Extração de Texto (PPTX, PDF, DOCX)
 
 Arquivos localizados em pastas por área são processados automaticamente:
 
@@ -68,7 +68,7 @@ caminho
 
 slide/página
 
-3️⃣ Chunking Didático
+ Chunking Didático
 
 Os textos consolidados são divididos em blocos semânticos de tamanho controlado, respeitando:
 
@@ -80,7 +80,7 @@ leitura humana e análise por IA.
 
 Isso evita resumos genéricos e perda de informação.
 
-4️⃣ Análise Didática Estruturada (IA)
+Análise Didática Estruturada (IA)
 
 Cada bloco é analisado seguindo estrutura fixa:
 
@@ -92,7 +92,7 @@ Exemplos (citados e explicados)
 Síntese técnica curta
 
 
-📌 Importante
+Importante
 A análise:
 
 respeita o conteúdo real extraído;
@@ -101,8 +101,8 @@ usa conhecimento acadêmico clássico apenas para esclarecer o que está implíc
 
 não inventa temas que não aparecem no material.
 
-🤖 Papel das IAs no Projeto
-🔹 Gemini (Google)
+Papel das IAs no Projeto
+Gemini (Google)
 
 Utilizado dentro do Colab para:
 
@@ -114,7 +114,7 @@ respeitar a estrutura solicitada;
 
 Funcionou como motor de leitura, interpretação e redação técnica.
 
-🔹 ChatGPT (OpenAI)
+ChatGPT (OpenAI)
 
 Atuou como arquitetural e corretivo:
 
@@ -130,12 +130,12 @@ estruturação da geração de áudio e PDF;
 
 Responsável por evitar soluções manuais, retrabalho e decisões frágeis.
 
-📌 Resumo honesto:
+Resumo honesto:
 
 Gemini escreveu o conteúdo.
 ChatGPT garantiu que o sistema funcionasse de ponta a ponta.
 
-🔊 Geração Automática de Áudio (MP3)
+Geração Automática de Áudio (MP3)
 
 Após a consolidação das análises em uma variável única (ANALISE_COMPLETA):
 
@@ -149,7 +149,7 @@ Arquivo final:
 
 ANALISE_DIDATICA_COMPLETA.mp3
 
-📄 Geração de PDF Formatado
+Geração de PDF Formatado
 
 O mesmo conteúdo textual é transformado em PDF profissional, usando reportlab:
 
@@ -165,7 +165,7 @@ Arquivo final:
 
 analise_completa.pdf
 
-🛠️ Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 Google Colab
 
@@ -185,7 +185,7 @@ Gemini (Google AI)
 
 ChatGPT (OpenAI)
 
-✅ Resultados Obtidos
+Resultados Obtidos
 
 Pipeline 100% funcional
 
@@ -203,7 +203,7 @@ replicação
 
 extensão futura
 
-📌 Observação Final
+Observação Final
 
 Este notebook não é um experimento, é um sistema funcional de produção de conteúdo educacional, criado sob restrição real, com foco em eficiência, clareza e reaproveitamento.
 
